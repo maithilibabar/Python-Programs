@@ -1,0 +1,30 @@
+# To check if word is Palindrome or not
+def is_palindrome(word):
+   
+    word_new = word.casefold()
+    rev_word = word_new[::-1]
+    
+    if word_new == rev_word:
+        return True
+    return False
+    
+   
+print(is_palindrome('Deleveled'))
+
+# To find squareroot of quadratic function
+import math
+
+def find_roots(a, b, c):
+    
+    x_1= (-b) + math.sqrt((b*b)-(4*a*c))
+    
+    X1 = x_1/(2*a)
+    
+    x_2 = (-b) - math.sqrt((b*b)-(4*a*c))
+    
+    X2 = x_2/(2*a)
+    
+    return (X1, X2)
+    
+
+print(find_roots(2, 10, 8));
