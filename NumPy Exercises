@@ -1,0 +1,96 @@
+# To test if none the numbers in array elements are zero ## Function all()
+
+import numpy as np
+x = np.array([1, 2, 3, 4])
+print("Original array:", x)
+print("Test if none of the elements of the said array is zero:", np.all(x))
+x = np.array([0, 1, 2, 3])
+print("Original array:", x)
+print("Test if none of the elements of the said array is zero:", np.all(x))
+
+#To test if any of the number in array element is zero. ## function any()
+
+import numpy as np
+x = np.array([1, 0, 0, 0])
+print("Original array:", x)
+print("Test if any of the elements of a given array is non-zero:", np.any(x))
+x = np.array([0, 0, 0, 0])
+print("Original array:", x)
+print("Test if any of the elements of a given array is non-zero:", np.any(x))
+
+#To test a given array elementwise for fitness(is infinite or not a number) ## function isfinite()
+
+import numpy as np
+a = np.array([1, 0, np.nan, np.inf])
+print("Original array", a)
+print("Test a given array element-wise for finiteness :", np.isfinite(a))
+
+#To test element-wise for complex number, real number of a given array. Also test if a given number is a scalar type or not.
+## Function isreal(), iscomplex(), isscalar()
+
+import numpy as np
+a = np.array([1+1j, 1+0j, 4.5, 3, 2, 2j])
+print("Original array:", a)
+print("Checking for complex number:", np.iscomplex(a))
+print("Checking for real number:", np.isreal(a))
+print("Checking for scalar type:", np.isscalar(3.1))
+
+#to create an element-wise comparison (greater, greater_equal, less and less_equal) of two given arrays.
+## Function greater(), greater_equal(), less(), less_equal()
+
+import numpy as np
+x = np.array([3, 5])
+y = np.array([2, 5])
+print("Original numbers (x):", x)
+print("Original numbers (y):", y)
+print("Comparison - greater:", np.greater(x, y))
+print("Comparison - greater_equal", np.greater_equal(x, y))
+print("Comparison - less", np.less(x, y))
+print("Comparison - less_equal", np.less_equal(x, y))
+
+#to create an element-wise comparison (equal, equal within a tolerance) of two given arrays.
+## Function- 
+
+import numpy as np
+x = np.array([72, 79, 85, 90, 150, -135, 120, -10, 60, 100])
+y = np.array([72, 79, 85, 90, 150, -135, 120, -10, 60, 100.000001])
+print("Original numbers (x):", x)
+print("Original numbers (y):", y)
+print("Comparison - equal:", np.greater(x, y))
+print("Comparison - equal within a tolerance:", np.greater_equal(x, y))
+
+# To create an array with the values 1, 7, 13, 105 and determine the size of the memory occupied by the array.
+##Function size(), itemsize()
+
+
+import numpy as np
+X = np.array([1, 7, 13, 105])
+print("Original array:")
+print(X)
+print("Size of the memory occupied by the said array:")
+print("%d bytes" % (X.size * X.itemsize))
+
+
+# To create identity matrix
+ # Function np.identity()
+ 
+ import numpy as np
+array_2D=np.identity(3)
+print('3x3 matrix:')
+print(array_2D)
+
+#To generate random number between 0 and 1
+#Function np.random.normal()
+
+import numpy as np
+rand_num = np.random.normal(0,1,1)
+print("Random number between 0 and 1:", rand_num)
+
+# To generate an array of 15 random numbers from a standard normal distribution
+# Function np.random.normal()
+
+import numpy as np
+rand_num = np.random.normal(0,1,15)
+print("15 random numbers from a standard normal distribution:", rand_num)
+
+
